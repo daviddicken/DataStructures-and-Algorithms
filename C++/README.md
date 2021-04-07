@@ -23,5 +23,5 @@ The function will also work with the stream cin as the input stream.
 * bulletproof
 
 ### Code
-[Code](AverageWord/AverageWord.cpp)
+[Code](AverageWord/AverageWord/AverageWord.cpp)
 _________________________________________________________________________________
