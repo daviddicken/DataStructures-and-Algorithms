@@ -21,6 +21,7 @@ namespace WhereMyAnagramsAt
     {
       List<string> rtnList = new List<string> { };
 
+      // Hashmap(dictionary) chars in input word
       Dictionary<char, int> wordDict = new Dictionary<char, int>();
       foreach(char letter in word)
       {
@@ -30,14 +31,14 @@ namespace WhereMyAnagramsAt
         }
       }
 
-      bool flag;
-      foreach(string w in words)
+      bool flag;  // flag to be false as soon as word is not a anagram
+      foreach(string w in words) 
       {
         flag = true;
         Dictionary<char, int> tempDict = new Dictionary<char, int>();
-        foreach (char letter in w)
+        foreach (char letter in w) // create a new dictionary with word to be checked as anagram
         {
-          if (wordDict.ContainsKey(letter))
+          if (wordDict.ContainsKey(letter)) // exit if letter doesn't exist in orignal word
           {
             if (!tempDict.TryAdd(letter, 1))
             {
@@ -50,10 +51,12 @@ namespace WhereMyAnagramsAt
             break;
           }
         }
-        if (wordDict.Count != tempDict.Count) flag = false;
+        // if dictionaries are different sizes then word is not a anagram
+        if (wordDict.Count != tempDict.Count) flag = false; 
         if (flag)
         {
-          foreach(char letter in w)
+          //check that each letter appears the same amount of times in each word
+          foreach (char letter in w) 
           {
             if(wordDict[letter] != tempDict[letter])
             {
@@ -61,7 +64,7 @@ namespace WhereMyAnagramsAt
               break;
             }
           }
-          if (flag)
+          if (flag) //It's an anagram add it to the list
           {
             rtnList.Add(w);
           }
