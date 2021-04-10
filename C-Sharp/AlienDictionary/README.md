@@ -1,5 +1,5 @@
 # Verifying an Alien Dictionary
-Date: 4/9/2021
+Date: 4/9/2021   
 Site: LeetCode
 
 # Challenge
