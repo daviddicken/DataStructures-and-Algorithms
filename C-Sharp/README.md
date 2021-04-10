@@ -27,4 +27,23 @@ Write a function that will find all the anagrams of a word from a list. You will
 * Iterate through each letter(char) in word from word array and compare the value found at that key in both Dictionaries if different flip flag to false and move on to next       word.
 * If flag is still true add current word from word array to return list.
 * When all words from word array have been compared return list.
+__________
+## Verifying An Alien Dictionary
+Date: 4/9/2021
+Site: LeetCode
 
+### Challenge
+In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order.
+The order of the alphabet is some permutation of lowercase letters.
+
+Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if
+the given words are sorted lexicographicaly in this alien language.
+
+### Algorithm
+* Iterate through words in word array comparing two words at a time
+* Step through each letter in the words comparing them until the letter being compared in each word is different or the end of one of the words is found
+* If all letters are the same and the end of the second word is found return false
+* If two different letters are found check the index of location of each letter in the order. 
+* If index of for letter from second word is less then index of for letter from first word return false
+* If all words in array have been compared and false wasn't returned then return true
+______________
