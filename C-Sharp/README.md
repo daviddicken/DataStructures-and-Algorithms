@@ -5,6 +5,7 @@
 
 ## Challenges
 * [Where My Anagrams At](#Where-My-Anagrams-At)
+* [Verifying An Alien Dictionary](#Verifying-An-Alien-Dictionary)
 
 
 # Challenges
