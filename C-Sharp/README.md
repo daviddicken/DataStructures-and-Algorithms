@@ -29,7 +29,7 @@ Write a function that will find all the anagrams of a word from a list. You will
 * When all words from word array have been compared return list.
 __________
 ## Verifying An Alien Dictionary
-Date: 4/9/2021
+Date: 4/9/2021  
 Site: LeetCode
 
 ### Challenge
