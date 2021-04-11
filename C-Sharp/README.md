@@ -4,7 +4,7 @@
 ## Data Structures
 * [Linked List](#Linked-List)
 
-## Sorts
+## Sorts\ing Algorithms
 
 ## Challenges
 * [Where My Anagrams At](#Where-My-Anagrams-At)
