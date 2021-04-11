@@ -2,6 +2,9 @@
 
 ## Table of Contents
 ## Data Structures
+* [Linked List](#Linked-List)
+
+## Sorts
 
 ## Challenges
 * [Where My Anagrams At](#Where-My-Anagrams-At)
