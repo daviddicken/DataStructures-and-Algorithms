@@ -16,7 +16,7 @@ namespace AlienDictionary
     public static bool IsAlienSorted(string[] words, string order)
     {
 
-      for (int i = 0; i < words.Length - 1; i++)
+      for (int i = 0; i < words.Length - 1; i++) // iterate through words in array
       {
         string word1 = words[i];
         string word2 = words[i + 1];
