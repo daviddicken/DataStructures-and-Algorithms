@@ -11,7 +11,7 @@
 * [Verifying An Alien Dictionary](#Verifying-An-Alien-Dictionary)
 
 # Data Structures
-# Linked List
+## Linked List
 A Linked List is a list of node that hold a value and a pointer to the next node in the list. The only thing a Linked list knows about is it's head node.
 
 ## Append
