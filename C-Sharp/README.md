@@ -10,6 +10,39 @@
 * [Where My Anagrams At](#Where-My-Anagrams-At)
 * [Verifying An Alien Dictionary](#Verifying-An-Alien-Dictionary)
 
+# Data Structures
+# Linked List
+A Linked List is a list of node that hold a value and a pointer to the next node in the list. The only thing a Linked list knows about is it's head node.
+
+## Append
+The Append method takes in a value and creates a new node to hold that value. It then iterates through the linked list until the next node is null. And istead of the next node pointing to null append will now point it to the new node that was created.
+
+![](whiteboards/append.png)
+
+## Insert
+To insert a node into a linked list we need to pass a value into the Insert function and then create a new node with that value. We will then point the new nodes next to the head node. And finally we reasign the new node as the head node.
+
+## InsertBefore
+InsertBefore takes in a value and a search value. It searches the list for the search value and if the search value is found a new node  holding the other value will be created and inserted before the node that holds the search value. The node that was pointing to the node holding the search value will now point to the new node. The new node will now point to the node holding the search value's next. And the node holding the search value will now have a pointer pointing to the next node.
+
+![](whiteboards/insert_before.png)
+
+## InsertAfter 
+InsertAfter takes in a value and a search value. It then iterates through the linked list comparing each value to the search value. If the values are equal a new node is created to hold the other value that was passed in. That new node will be inserted into the linked list after the node that holds the value matching the search value. The new nodes next will now point to the node holding the search values's next.
+
+![](whiteboards/insertafter.pdf)
+
+## Includes
+To check a linked list if it contains a value we need to step through every node comparing the values until the value is found or the end of the linked list is reached.
+We can do this by putting the head node into a variable and writing a while loop that runs until node is equal to null. Inside the loop we will compare the value passed in to the current nodes value if they match we will return true. If not we make the current node equal to the current nodes next node.
+If the while loop exits then the value was not found and we return false.
+
+## Print
+The print method print human readable representation of the lists values to the screen. We do that a lot like the Includes method except in the while loop we console.write a pretty string with the curent nodes value and when the loop is exited we print out null
+
+## ToString
+ToString is a method used to return a human readable string representation of the values in the list. We do this recursively by creating a class level string variable to hold our string as we step back through the stack. We then make sure that the string is empty in the main toString and we call a overloaded helper toString method that taked in a node, by passing in the head node. In the helper method we check that the node is not null if it is we add "NULL" to the string and return it. If it's not null we add the value of that node to our string and then we call the helper method again passing in the current node next.
+_____________
 
 # Challenges
 
